@@ -7,6 +7,8 @@ import { HomeCarouselComponent } from './home-carousel/home-carousel.component';
 import { HomeWelcomeComponent } from './home-welcome/home-welcome.component';
 import { HomeUpdatesComponent } from './home-updates/home-updates.component';
 import { ArtistsComponent } from './artists/artists.component';
+import { ArtistUserComponent } from './artist-user/artist-user.component';
+import { NavbarLoggedInComponent } from './navbar-logged-in/navbar-logged-in.component';
 
 // const appRoutes: Routes = [
 //   { path: 'artists', component: }
@@ -18,7 +20,9 @@ import { ArtistsComponent } from './artists/artists.component';
     HomeCarouselComponent,
     HomeWelcomeComponent,
     HomeUpdatesComponent,
-    ArtistsComponent
+    ArtistsComponent,
+    ArtistUserComponent,
+    NavbarLoggedInComponent
   ],
   imports: [
     BrowserModule,
