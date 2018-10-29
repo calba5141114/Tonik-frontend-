@@ -1,0 +1,62 @@
+.column {
+    float: left;
+    padding: 75px;
+    margin-top: 50px;
+}
+
+.right {
+    width: 25%;
+    margin: auto;
+}
+
+.left {
+    width: 25%;
+    float: left;
+    margin: auto;
+}
+
+.middle {
+    width: 25%;
+    margin: auto;
+}
+
+.center {
+    display: block;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 50%;
+}
+
+h1 {
+    text-align: center;
+    padding: 75px;
+    color: #8a25b1;
+}
+
+.bg {
+    /* background-color: #8a25b1; */
+    background-color: transparent;
+}
+
+p {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.genre-img {
+    /* background: url("/assets/artists-by-genre.jpg") no-repeat center center; */
+    font-size: 1.1em;
+    border: 5px solid black;
+    padding-right: 50%;
+    background-size: 50% 100%;
+}
+
+.header {
+    font-size: 1.1em;
+    border: 5px solid black;
+    padding-right: 50%;
+    background-size: 50% 100%;
+}

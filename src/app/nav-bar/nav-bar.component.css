@@ -1,3 +1,43 @@
 .btn {
     margin: 5px
 }
+
+.navbar-bg {
+    background-color: #a6a4a6;
+}
+
+a {
+    color: white !important;
+}
+
+a:hover {
+    color: #8a25b1 !important;
+}
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.btn-primary {
+    background: #8a25b1;
+    color: white;
+}
+
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #a6a4a6;
+}
+
+.btn-primary:active, .btn-primary.active {
+    background: #a6a4a6;
+    box-shadow: none;
+}
+
+
+
