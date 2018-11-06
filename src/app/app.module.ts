@@ -9,6 +9,7 @@ import { HomeUpdatesComponent } from './home-updates/home-updates.component';
 import { ArtistsComponent } from './artists/artists.component';
 import { ArtistUserComponent } from './artist-user/artist-user.component';
 import { NavbarLoggedInComponent } from './navbar-logged-in/navbar-logged-in.component';
+import { GeneralUserComponent } from './general-user/general-user.component';
 
 // const appRoutes: Routes = [
 //   { path: 'artists', component: }
@@ -22,7 +23,8 @@ import { NavbarLoggedInComponent } from './navbar-logged-in/navbar-logged-in.com
     HomeUpdatesComponent,
     ArtistsComponent,
     ArtistUserComponent,
-    NavbarLoggedInComponent
+    NavbarLoggedInComponent,
+    GeneralUserComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,94 @@
+.header-img {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 25px;
+    padding-top: 50px;
+    border: solid black;
+    float: right;
+}
+
+.bio-container {
+    padding: 50px;
+    display: inline-block;
+}
+
+.profile-img {
+    display: inline-block;
+}
+
+.album {
+    padding: 150px;
+    margin: auto;
+}
+.album-header {
+    margin-left: 125px;
+    border: solid black;
+    padding: 100px;
+
+}
+
+.column {
+    float: left;
+    padding: 125px;
+    margin-top: 50px;
+}
+
+.right {
+    width: 25%;
+    margin: auto;
+}
+
+.left {
+    width: 25%;
+    float: left;
+    margin: auto;
+}
+
+.middle {
+    width: 25%;
+    margin: auto;
+}
+
+.center {
+    display: block;
+    margin-left: -60px;
+    margin-right: 100px;
+    width:250px;
+}
+
+.songs-container {
+    margin-inline-start: 10%;
+}
+
+.song-container {
+    padding: 100px;
+    border: solid black;
+    float: left;
+}
+
+#song-title {
+    text-align: center;
+    margin-left: auto;
+}
+
+.song-image {
+    display: inline-block
+}
+
+table {
+    margin-left: 200px;
+}
+
+td {
+    padding: 150px;
+}
+
+.song-title {
+    padding: 25px;
+}
+
+.song-header {
+    border: solid black;
+    padding: 100px;
+    margin-left: 125px;
+}

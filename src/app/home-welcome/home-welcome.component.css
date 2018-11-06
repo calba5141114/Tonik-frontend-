@@ -7,7 +7,7 @@ p {
 }
 
 .bg {
-    background: url('/assets/WelcomeImage.jpg') no-repeat center center;
+    background: url('/assets/home-welcome-img2.jpg') no-repeat center center;
     position: fixed;
     width: 100%;
     height: 1080px;
