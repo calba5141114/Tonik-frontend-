@@ -1,0 +1,12 @@
+.faq-header {
+    padding: 50px;
+}
+
+.faq-text-container {
+    display: inline-block;
+}
+
+.faq-question {
+    margin-left: 100px;
+    padding: 30px;
+}

@@ -10,6 +10,8 @@ import { ArtistsComponent } from './artists/artists.component';
 import { ArtistUserComponent } from './artist-user/artist-user.component';
 import { NavbarLoggedInComponent } from './navbar-logged-in/navbar-logged-in.component';
 import { GeneralUserComponent } from './general-user/general-user.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { FAQComponent } from './faq/faq.component';
 
 // const appRoutes: Routes = [
 //   { path: 'artists', component: }
@@ -24,7 +26,9 @@ import { GeneralUserComponent } from './general-user/general-user.component';
     ArtistsComponent,
     ArtistUserComponent,
     NavbarLoggedInComponent,
-    GeneralUserComponent
+    GeneralUserComponent,
+    AboutUsComponent,
+    FAQComponent
   ],
   imports: [
     BrowserModule,
