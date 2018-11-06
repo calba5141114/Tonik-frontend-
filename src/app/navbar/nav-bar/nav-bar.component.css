@@ -32,6 +32,7 @@ a:hover {
 
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
+    background: black;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {

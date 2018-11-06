@@ -23,7 +23,8 @@ const appRoutes: Routes = [
   { path: 'artists', component: ArtistsComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'faq', component: FAQComponent },
-  { path: 'choose-usertype', component: ChooseSignUpComponent }
+  { path: 'choose-usertype', component: ChooseSignUpComponent },
+  { path: 'artist-profile', component: ArtistUserComponent }
 ];
 @NgModule({
   declarations: [
