@@ -24,7 +24,9 @@ const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'faq', component: FAQComponent },
   { path: 'choose-usertype', component: ChooseSignUpComponent },
-  { path: 'artist-profile', component: ArtistUserComponent }
+  { path: 'artist-profile', component: ArtistUserComponent },
+  { path: 'artist-sign-up', component: ArtistSignUpComponent },
+  { path: 'general-sign-up', component: GeneralSignUpComponent }
 ];
 @NgModule({
   declarations: [

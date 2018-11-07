@@ -58,5 +58,9 @@ h3 {
     font-size: 1.1em;
     border: 5px solid black;
     padding-right: 50%;
-    background-size: 50% 100%;
+    background-size: 100%;
 }
+
+/* TODO: MAKE WEBSITE RESPONSIVE */
+/* @media */
+
