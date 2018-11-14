@@ -1,10 +1,14 @@
+// Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule }  from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+//Services
+import { AuthService } from './services/auth.service';
 
+//Components
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navbar/nav-bar/nav-bar.component';
 import { HomeCarouselComponent } from './home-page/home-carousel/home-carousel.component';
@@ -54,7 +58,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
