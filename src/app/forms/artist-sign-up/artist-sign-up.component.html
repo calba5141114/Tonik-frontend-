@@ -1,26 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tonik</title>
-</head>
-<body>
-    <h1>
-        user singup 
-    </h1>
-    <form action="/artistsignup" method='post' class="col-xs-12">
-    <input type="text" name='email' placeholder=' email'>
-    <input type="text" name='password' placeholder=' password'>
-    <input type="text" name='artist_name' placeholder=' user name'>
-    <input type="text" name=' description' placeholder='bio'>
-    <input type="text" name=' location' placeholder='location'>
-    <input type="number" name='age' placeholder='age'>
-     <button formaction='/artistsignup' type="submit">
-            
-    </button>
-</form>
-    
-</body>
-</html>
+<div class="header">
+    Artist Sign Up 
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
+        <form (ngSubmit)="onSubmit(tonikArtistSignup)" #tonikArtistSignup="ngForm">
+          <div id="user-data">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" class="form-control" [ngModel] name="email">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="text" id="password" class="form-control" [ngModel] name="password">
+            </div>
+            <div class="form-group">
+                <label for="artist_name">Artist Name</label>
+                <input type="text" id="artist_name" class="form-control" [ngModel] name="artist_name">
+            </div>
+            <div class="form-group">
+                <label for="bio">Bio</label>
+                <input type="text" id="description" class="form-control" [ngModel] name="description">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" class="form-control" [ngModel] name="location">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="text" id="age" class="form-control" [ngModel] name="age">
+            </div>
+          </div>
+          <!-- <div class="form-group">
+            <label for="secret">Secret Questions</label>
+            <select id="secret" class="form-control">
+              <option value="pet">Your first Pet?</option>
+              <option value="teacher">Your first teacher?</option>
+            </select>
+          </div> -->
+          <div>
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+          <!-- <div>
+            <a href=""><button class="btn btn-primary float-right margin-bottom: 10px">Go Back</button></a>
+          </div> -->
+        </form>
+      </div>
+    </div>
+  </div>

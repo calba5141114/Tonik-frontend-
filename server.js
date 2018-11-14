@@ -1,5 +1,7 @@
 const http = require('http');
 
 http.createServer(() => {
-    res.send('/', {});
+    res.end('Word');
 });
+
+server.listen(process.env.PORT || 3000);

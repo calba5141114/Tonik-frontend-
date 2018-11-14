@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule }  from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
@@ -25,8 +27,9 @@ const appRoutes: Routes = [
   { path: 'faq', component: FAQComponent },
   { path: 'choose-usertype', component: ChooseSignUpComponent },
   { path: 'artist-profile', component: ArtistUserComponent },
-  { path: 'artist-sign-up', component: ArtistSignUpComponent },
-  { path: 'general-sign-up', component: GeneralSignUpComponent }
+  { path: 'artistsignup', component: ArtistSignUpComponent },
+  { path: 'generalsignup', component: GeneralSignUpComponent }
+  
 ];
 @NgModule({
   declarations: [
@@ -47,7 +50,9 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
