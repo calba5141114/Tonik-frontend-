@@ -19,7 +19,7 @@ export class ArtistSignUpComponent implements OnInit {
 
   signUpArtist() {
     console.log(this.artistSignUpData)
-    this._auth.registerUser(this.artistSignUpData)
+    this._auth.signUpArtist(this.artistSignUpData)
       .subscribe(
         Response => console.log(Response),
         err => console.log(err)

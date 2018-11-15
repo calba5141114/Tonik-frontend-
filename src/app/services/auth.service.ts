@@ -6,10 +6,24 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AuthService {
 
-  private signUpUrl = "http://localhost:3000/artist/signup"
+  //SIGN UP URLS
+  private artistSignUpUrl = "http://localhost:3000/artist/signup"
+  private generalSignUpUrl = "http://localhost:3000/donators/signup"
+
+  //LOGIN URLS
+  private artistLogInUrl = "http://localhost:3000/artist/login"
+  private generalLogInUrl = "http://localhost:3000/donators/login"
+
   constructor(private http: HttpClient) { }
 
-  registerUser(user) {
-    return this.http.post<any>(this.signUpUrl, user) 
+  //SIGNS UP ARTIST
+  signUpArtist(user) {
+    return this.http.post<any>(this.artistSignUpUrl, user) 
   }
+
+  //SIGNS UP GENERAL
+  signUpGeneral(user) {
+    return this.http.post<any>(this.generalSignUpUrl, user)
+  }
+
 }
