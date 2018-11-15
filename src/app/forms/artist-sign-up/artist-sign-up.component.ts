@@ -8,7 +8,7 @@ import { AuthService } from '../../services/auth.service';
 })
 export class ArtistSignUpComponent implements OnInit {
   
- signUpUserData = {}
+ artistSignUpData = {}
   constructor(private _auth: AuthService) { 
 
   }
@@ -17,9 +17,9 @@ export class ArtistSignUpComponent implements OnInit {
     
   }
 
-  signUpUser() {
-    console.log(this.signUpUserData)
-    this._auth.registerUser(this.signUpUserData)
+  signUpArtist() {
+    console.log(this.artistSignUpData)
+    this._auth.registerUser(this.artistSignUpData)
       .subscribe(
         Response => console.log(Response),
         err => console.log(err)
