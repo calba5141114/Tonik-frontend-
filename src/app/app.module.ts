@@ -25,6 +25,7 @@ import { ArtistSignUpComponent } from './forms/artist-sign-up/artist-sign-up.com
 import { ChooseSignUpComponent } from './tabs/choose-sign-up/choose-sign-up.component';
 import { ArtistLogInComponent } from './forms/artist-log-in/artist-log-in.component';
 import { ChooseLogInComponent } from './tabs/choose-log-in/choose-log-in.component';
+import { GeneralLoginComponent } from './forms/general-login/general-login.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeWelcomeComponent },
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
   { path: 'artist-profile', component: ArtistUserComponent },
   { path: 'artistsignup', component: ArtistSignUpComponent },
   { path: 'generalsignup', component: GeneralSignUpComponent },
-  { path: 'artistlogin', component: ArtistLogInComponent },
+  { path: 'artist-login', component: ArtistLogInComponent },
+  { path: 'general-login', component: GeneralLoginComponent },
   { path: 'choose-usertype-login', component: ChooseLogInComponent }
   
 ];
@@ -57,6 +59,7 @@ const appRoutes: Routes = [
     ChooseSignUpComponent,
     ArtistLogInComponent,
     ChooseLogInComponent,
+    GeneralLoginComponent,
   ],
   imports: [
     BrowserModule,
