@@ -1,10 +1,14 @@
+// Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule }  from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
+//Services
+import { AuthService } from './services/auth.service';
 
+//Components
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navbar/nav-bar/nav-bar.component';
 import { HomeCarouselComponent } from './home-page/home-carousel/home-carousel.component';
@@ -19,16 +23,20 @@ import { FAQComponent } from './tabs/faq/faq.component';
 import { GeneralSignUpComponent } from './forms/general-sign-up/general-sign-up.component';
 import { ArtistSignUpComponent } from './forms/artist-sign-up/artist-sign-up.component';
 import { ChooseSignUpComponent } from './tabs/choose-sign-up/choose-sign-up.component';
+import { ArtistLogInComponent } from './forms/artist-log-in/artist-log-in.component';
+import { ChooseLogInComponent } from './tabs/choose-log-in/choose-log-in.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeWelcomeComponent },
   { path: 'artists', component: ArtistsComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'faq', component: FAQComponent },
-  { path: 'choose-usertype', component: ChooseSignUpComponent },
+  { path: 'choose-usertype-signup', component: ChooseSignUpComponent },
   { path: 'artist-profile', component: ArtistUserComponent },
   { path: 'artistsignup', component: ArtistSignUpComponent },
-  { path: 'generalsignup', component: GeneralSignUpComponent }
+  { path: 'generalsignup', component: GeneralSignUpComponent },
+  { path: 'artistlogin', component: ArtistLogInComponent },
+  { path: 'choose-usertype-login', component: ChooseLogInComponent }
   
 ];
 @NgModule({
@@ -47,6 +55,8 @@ const appRoutes: Routes = [
     GeneralSignUpComponent,
     ArtistSignUpComponent,
     ChooseSignUpComponent,
+    ArtistLogInComponent,
+    ChooseLogInComponent,
   ],
   imports: [
     BrowserModule,
@@ -54,7 +64,7 @@ const appRoutes: Routes = [
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

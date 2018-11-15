@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-
+import { AuthService } from '../../services/auth.service';
 @Component({
   selector: 'app-artist-sign-up',
   templateUrl: './artist-sign-up.component.html',
@@ -8,10 +8,8 @@ import { NgForm } from '@angular/forms';
 })
 export class ArtistSignUpComponent implements OnInit {
   
-  onSubmit(form: NgForm) {
-    console.log(form)
-  }
-  constructor() { 
+ artistSignUpData = {}
+  constructor(private _auth: AuthService) { 
 
   }
 
@@ -19,4 +17,12 @@ export class ArtistSignUpComponent implements OnInit {
     
   }
 
+  signUpArtist() {
+    console.log(this.artistSignUpData)
+    this._auth.registerUser(this.artistSignUpData)
+      .subscribe(
+        Response => console.log(Response),
+        err => console.log(err)
+      )
+  }
 }

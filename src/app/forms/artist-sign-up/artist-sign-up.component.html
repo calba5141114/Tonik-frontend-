@@ -1,35 +1,43 @@
+<div style="padding: 50px">
+    <a href="/"><button class="btn btn-primary" style="float: leftt;">Go Back</button></a>
+</div>
+<div class="header-image">
+  <img src="assets/new-BrandLogo.ico"/>
+</div>
+
 <div class="header">
     Artist Sign Up 
+    
 </div>
 
 <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-1 col-md-offset-2">
-        <form (ngSubmit)="onSubmit(tonikArtistSignup)" #tonikArtistSignup="ngForm">
+        <form>
           <div id="user-data">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="text" id="email" class="form-control" [ngModel] name="email">
+              <input type="text" id="email" class="form-control" [(ngModel)]="artistSignUpData.email" name="email">
             </div>
             <div class="form-group">
               <label for="password">Password</label>
-              <input type="text" id="password" class="form-control" [ngModel] name="password">
+              <input type="password" id="password" class="form-control" [(ngModel)]="artistSignUpData.password" name="password">
             </div>
             <div class="form-group">
                 <label for="artist_name">Artist Name</label>
-                <input type="text" id="artist_name" class="form-control" [ngModel] name="artist_name">
+                <input type="text" id="artist_name" class="form-control" [(ngModel)]="artistSignUpData.artist_name" name="artist_name">
             </div>
             <div class="form-group">
                 <label for="bio">Bio</label>
-                <input type="text" id="description" class="form-control" [ngModel] name="description">
+                <input type="text" id="description" class="form-control" [(ngModel)]="artistSignUpData.description" name="description">
             </div>
             <div class="form-group">
                 <label for="location">Location</label>
-                <input type="text" id="location" class="form-control" [ngModel] name="location">
+                <input type="text" id="location" class="form-control" [(ngModel)]="artistSignUpData.location" name="location">
             </div>
             <div class="form-group">
                 <label for="age">Age</label>
-                <input type="text" id="age" class="form-control" [ngModel] name="age">
+                <input type="text" id="age" class="form-control" [(ngModel)]="artistSignUpData.age" name="age">
             </div>
           </div>
           <!-- <div class="form-group">
@@ -40,7 +48,9 @@
             </select>
           </div> -->
           <div>
-            <button class="btn btn-primary" type="submit">Submit</button>
+            <div>
+              <a href="artist-profile"><button (click)="signUpArtist()" class="btn btn-primary" type="submit" style="float: right;">Submit</button></a>
+            </div>
           </div>
           <!-- <div>
             <a href=""><button class="btn btn-primary float-right margin-bottom: 10px">Go Back</button></a>

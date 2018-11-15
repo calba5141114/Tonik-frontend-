@@ -11,7 +11,7 @@ export class ServerService {
   constructor(private http: HttpClient) { }
 
  ngOnInit() {
-  let obs = this.http.get('http://localhost:3000/artistsignup')
+  let obs = this.http.get('http://localhost:3000/artist/signup')
     obs.subscribe((response) => console.log(response));
  }
 
