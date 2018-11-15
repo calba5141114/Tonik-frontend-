@@ -6,8 +6,7 @@
 </div>
 
 <div class="header">
-    Artist Sign Up 
-    
+    General Login
 </div>
 
 <div class="container">
@@ -23,38 +22,10 @@
               <label for="password">Password</label>
               <input type="password" id="password" class="form-control" [(ngModel)]="artistSignUpData.password" name="password">
             </div>
-            <div class="form-group">
-                <label for="artist_name">Artist Name</label>
-                <input type="text" id="artist_name" class="form-control" [(ngModel)]="artistSignUpData.artist_name" name="artist_name">
-            </div>
-            <div class="form-group">
-                <label for="bio">Bio</label>
-                <input type="text" id="description" class="form-control" [(ngModel)]="artistSignUpData.description" name="description">
-            </div>
-            <div class="form-group">
-                <label for="location">Location</label>
-                <input type="text" id="location" class="form-control" [(ngModel)]="artistSignUpData.location" name="location">
-            </div>
-            <div class="form-group">
-                <label for="age">Age</label>
-                <input type="text" id="age" class="form-control" [(ngModel)]="artistSignUpData.age" name="age">
-            </div>
-          </div>
-          <!-- <div class="form-group">
-            <label for="secret">Secret Questions</label>
-            <select id="secret" class="form-control">
-              <option value="pet">Your first Pet?</option>
-              <option value="teacher">Your first teacher?</option>
-            </select>
-          </div> -->
-          <div>
             <div>
-              <a href="artist-profile"><button (click)="signUpArtist()" class="btn btn-primary" type="submit" style="float: right;">Submit</button></a>
+              <a href="artist-profile"><button (click)="signUpArtist()" class="btn btn-primary" type="submit" style="float: right;">Log In</button></a>
             </div>
           </div>
-          <!-- <div>
-            <a href=""><button class="btn btn-primary float-right margin-bottom: 10px">Go Back</button></a>
-          </div> -->
         </form>
       </div>
     </div>
