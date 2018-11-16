@@ -26,4 +26,9 @@ export class AuthService {
     return this.http.post<any>(this.generalSignUpUrl, user)
   }
 
+  //LOGS IN ARTIST
+  logInArtist(user) {
+    return this.http.post<any>(this.artistLogInUrl, user)
+  }
+
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-artist-log-in',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtistLogInComponent implements OnInit {
 
-  constructor() { }
+  logInArtistData = {}
+
+  constructor(private _auth: AuthService) { }
 
   ngOnInit() {
   }
 
+  logInArtist() {
+    console.log(this.logInArtistData)
+    this._auth.logInArtist(this.logInArtistData)
+      .subscribe(
+        Response => console.log(Response),
+        err => console.log(err),
+      )
+  }
 }
