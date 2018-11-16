@@ -9,6 +9,7 @@ import { AuthService } from '../../services/auth.service';
 export class ArtistSignUpComponent implements OnInit {
   
  artistSignUpData = {}
+ 
   constructor(private _auth: AuthService) { 
 
   }

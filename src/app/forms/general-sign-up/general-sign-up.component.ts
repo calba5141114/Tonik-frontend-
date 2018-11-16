@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-general-sign-up',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeneralSignUpComponent implements OnInit {
 
-  constructor() { }
+  generalSignUpData = {}
+
+  constructor(private _auth: AuthService)  { }
+
 
   ngOnInit() {
   }
 
+  //Signs up general user and sends it to api and logs response
+  signUpGeneral() {
+    console.log('This is the user ' + this.generalSignUpData)
+    this._auth.signUpGeneral(this.generalSignUpData)
+      .subscribe(
+        Response => console.log(Response),
+        err => console.log(err)
+      )
+  }
 }
