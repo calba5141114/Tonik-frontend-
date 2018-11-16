@@ -31,4 +31,9 @@ export class AuthService {
     return this.http.post<any>(this.artistLogInUrl, user)
   }
 
+  //LOGS IN GENERAL
+  logInGeneral(user) {
+    return this.http.post<any>(this.generalLogInUrl, user) 
+  }
+
 }

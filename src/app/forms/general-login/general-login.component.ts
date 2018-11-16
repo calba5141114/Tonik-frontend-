@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-general-login',
@@ -7,9 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GeneralLoginComponent implements OnInit {
 
-  constructor() { }
+  generalLogInData = {}
+
+  constructor(private _auth: AuthService) { }
 
   ngOnInit() {
   }
 
+  logInGeneral() {
+    console.log(this.generalLogInData)
+    this._auth.logInGeneral(this.generalLogInData)
+      .subscribe(
+        Response => console.log(Response),
+        err => console.log(err)
+      )
+  }
 }
