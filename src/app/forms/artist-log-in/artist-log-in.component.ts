@@ -19,7 +19,10 @@ export class ArtistLogInComponent implements OnInit {
     console.log(this.logInArtistData)
     this._auth.logInArtist(this.logInArtistData)
       .subscribe(
-        Response => console.log(Response),
+        Response => {
+          console.log(Response)
+          localStorage.setItem('token', Response)
+        },
         err => console.log(err),
       )
   }

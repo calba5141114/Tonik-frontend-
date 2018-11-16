@@ -19,7 +19,10 @@ export class GeneralLoginComponent implements OnInit {
     console.log(this.generalLogInData)
     this._auth.logInGeneral(this.generalLogInData)
       .subscribe(
-        Response => console.log(Response),
+        Response => {
+          console.log(Response)
+          localStorage.setItem('token', Response)
+        },
         err => console.log(err)
       )
   }
