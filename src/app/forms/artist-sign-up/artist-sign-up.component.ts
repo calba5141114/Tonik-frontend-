@@ -29,8 +29,8 @@ export class ArtistSignUpComponent implements OnInit {
         Response => {
           console.log(Response)
           this._ngZone.runOutsideAngular(() => {
-            this.router.navigateByUrl('artist-login')
-          })
+            window.location.href = '/artist-login'
+          });
         },
         err => {
           console.log(err, 'Error')
