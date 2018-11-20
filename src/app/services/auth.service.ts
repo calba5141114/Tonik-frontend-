@@ -7,12 +7,12 @@ import { HttpClient } from '@angular/common/http';
 export class AuthService {
 
   //SIGN UP URLS
-  private artistSignUpUrl = "http://localhost:3000/artist/signup"
-  private generalSignUpUrl = "http://localhost:3000/donators/signup"
+  private artistSignUpUrl = "http://localhost:5000/artist/signup"
+  private generalSignUpUrl = "http://localhost:5000/donators/signup"
 
   //LOGIN URLS
-  private artistLogInUrl = "http://localhost:3000/artist/login"
-  private generalLogInUrl = "http://localhost:3000/donators/login"
+  private artistLogInUrl = "http://localhost:5000/artist/login"
+  private generalLogInUrl = "http://localhost:5000/donators/login"
 
   constructor(private http: HttpClient) { }
 
