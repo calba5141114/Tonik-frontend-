@@ -33,19 +33,4 @@ export class GeneralSignUpComponent implements OnInit {
       )
   }
 
-  // signUpArtist() {
-  //   console.log(this.artistSignUpData)
-  //   this._auth.signUpArtist(this.artistSignUpData)
-  //     .subscribe(
-  //       Response => {
-  //         console.log(Response)
-  //         this._ngZone.runOutsideAngular(() => {
-  //           window.location.href = '/artist-login'
-  //         });
-  //       },
-  //       err => {
-  //         console.log(err, 'Error')
-  //       }
-  //     )
-  // }
 }
