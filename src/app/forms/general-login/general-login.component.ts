@@ -22,7 +22,7 @@ export class GeneralLoginComponent implements OnInit {
       .subscribe(
         Response => {
           console.log(Response)
-          localStorage.setItem('token', Response),
+          localStorage.setItem('token', Response.token),
           this._ngZone.runOutsideAngular(() => {
             window.location.href = '/general-profile'
           });
