@@ -1,9 +1,15 @@
 .btn {
-    margin: 5px
+    margin: 5px;
+    padding: 5px;
+}
+
+.navbar {
+    overflow: hidden;
 }
 
 .navbar-bg {
     background-color: white;
+    box-shadow: 0px 0px 10px black;
 }
 
 a {
@@ -17,7 +23,7 @@ a:hover {
 }
 
 .btn {
-    padding: 14px 24px;
+    padding: 12px 22px;
     border: 0 none;
     font-weight: 700;
     letter-spacing: 1px;
@@ -30,6 +36,7 @@ a:hover {
 
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
+    background: black;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
@@ -41,15 +48,50 @@ a:hover {
     box-shadow: none;
 }
 
-li {
-    border-radius: 15px;
-    border-style: solid; 
-    border-color: #723974;
-    background: #723974;
+.dropbtn {
+    background-color: #723974;
+    color: white;
+    font-size: 16px;
+    border: none;
 }
 
-.nav-link {
-    padding: 20px
+.dropdown {
+    position: relative; 
+    display: inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: black;
+}
+
+img {
+    margin-right: 20px;
+    width: 75px;
+    height: 75px;
 }
 
 

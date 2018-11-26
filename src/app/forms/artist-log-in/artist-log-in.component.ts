@@ -22,7 +22,7 @@ export class ArtistLogInComponent implements OnInit {
       .subscribe(
         Response => {
           console.log(Response),
-          localStorage.setItem('token', Response.token),
+          localStorage.setItem('token', Response),
           this._ngZone.runOutsideAngular(() => {
             window.location.href = '/artist-profile'
           })

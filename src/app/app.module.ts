@@ -11,7 +11,6 @@ import { AuthService } from './services/auth.service';
 //Components
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './navbar/nav-bar/nav-bar.component';
-import { HomeCarouselComponent } from './home-page/home-carousel/home-carousel.component';
 import { HomeWelcomeComponent } from './home-page/home-welcome/home-welcome.component';
 import { HomeUpdatesComponent } from './home-page/home-updates/home-updates.component';
 import { ArtistsComponent } from './tabs/artists/artists.component';
@@ -27,6 +26,7 @@ import { ArtistLogInComponent } from './forms/artist-log-in/artist-log-in.compon
 import { ChooseLogInComponent } from './tabs/choose-log-in/choose-log-in.component';
 import { GeneralLoginComponent } from './forms/general-login/general-login.component';
 
+//Routes
 const appRoutes: Routes = [
   { path: '', component: HomeWelcomeComponent },
   { path: 'artists', component: ArtistsComponent },
@@ -45,7 +45,6 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     NavBarComponent,
-    HomeCarouselComponent,
     HomeWelcomeComponent,
     HomeUpdatesComponent,
     ArtistsComponent,
