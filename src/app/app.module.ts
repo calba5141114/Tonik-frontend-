@@ -34,7 +34,7 @@ const appRoutes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'faq', component: FAQComponent },
   { path: 'choose-usertype-signup', component: ChooseSignUpComponent },
-  { path: 'artist-profile', component: ArtistUserComponent },
+  { path: 'artist-profile', component: UserProfileComponent }, //SHOULD BE ARTIST-USER COMPONENT
   { path: 'artistsignup', component: ArtistSignUpComponent },
   { path: 'generalsignup', component: GeneralSignUpComponent },
   { path: 'artist-login', component: ArtistLogInComponent },
