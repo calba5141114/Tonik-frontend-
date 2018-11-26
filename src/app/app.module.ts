@@ -25,6 +25,7 @@ import { ChooseSignUpComponent } from './tabs/choose-sign-up/choose-sign-up.comp
 import { ArtistLogInComponent } from './forms/artist-log-in/artist-log-in.component';
 import { ChooseLogInComponent } from './tabs/choose-log-in/choose-log-in.component';
 import { GeneralLoginComponent } from './forms/general-login/general-login.component';
+import { UserProfileComponent } from './users/user-profile/user-profile.component';
 
 //Routes
 const appRoutes: Routes = [
@@ -59,6 +60,7 @@ const appRoutes: Routes = [
     ArtistLogInComponent,
     ChooseLogInComponent,
     GeneralLoginComponent,
+    UserProfileComponent,
   ],
   imports: [
     BrowserModule,
