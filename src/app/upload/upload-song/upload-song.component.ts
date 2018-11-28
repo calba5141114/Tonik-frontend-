@@ -12,4 +12,7 @@ export class UploadSongComponent implements OnInit {
   ngOnInit() {
   }
 
+//   selectFile() {
+//     this.selec
+//  }
 }

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpModule } from '@angular/http';
 import { Subject } from 'rxjs';
-import { HttpClient } from '@angular/common/http'
+import { HttpClient, HttpEvent, HttpRequest } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -10,10 +9,14 @@ export class ServerService {
 
   constructor(private http: HttpClient) { }
 
+  //File-Upload URL
+  private fileUploadService = 'http://localhost:5000/fileupload/audio-upload'
+
  ngOnInit() {
-  let obs = this.http.get('http://localhost:3000/artist/signup')
-    obs.subscribe((response) => console.log(response));
  }
 
+ uploadFile (file) {
+   return this.http.post<any>(this.fileUploadService, file)
+ }
 
 }

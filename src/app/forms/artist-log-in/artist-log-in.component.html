@@ -23,7 +23,7 @@
               <input type="password" id="password" class="form-control" [(ngModel)]="logInArtistData.password" name="password">
             </div>
             <div>
-              <a href="artist-profile"><button (click)="logInArtist()" class="btn btn-primary" type="submit" style="float: right;">Log In</button></a>
+              <a href="artist-profile"><button (click)="logInArtist()" (click)="getUser()" class="btn btn-primary" type="submit" style="float: right;">Log In</button></a>
             </div>
           </div>
         </form>

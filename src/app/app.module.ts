@@ -40,7 +40,8 @@ const appRoutes: Routes = [
   { path: 'generalsignup', component: GeneralSignUpComponent },
   { path: 'artist-login', component: ArtistLogInComponent },
   { path: 'general-login', component: GeneralLoginComponent },
-  { path: 'choose-usertype-login', component: ChooseLogInComponent }
+  { path: 'choose-usertype-login', component: ChooseLogInComponent },
+  { path: 'upload-song', component: UploadSongComponent }
   
 ];
 @NgModule({
@@ -63,7 +64,7 @@ const appRoutes: Routes = [
     GeneralLoginComponent,
     UserProfileComponent,
     UploadSongComponent,
-  ],
+],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),

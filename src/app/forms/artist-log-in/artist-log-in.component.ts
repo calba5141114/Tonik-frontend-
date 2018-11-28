@@ -15,7 +15,7 @@ export class ArtistLogInComponent implements OnInit {
   ngOnInit() {
   }
 
-  //Artist can login and redirects them to their profile 
+  // Artist can login and redirects them to their profile 
   logInArtist() {
     console.log(this.logInArtistData)
     this._auth.logInArtist(this.logInArtistData)
@@ -30,6 +30,26 @@ export class ArtistLogInComponent implements OnInit {
         err => console.log(err, 'Error')
       )
   }
+
+  // logInArtist() {
+  //   console.log(this.logInArtistData)
+  //   this._auth.logInArtist(this.logInArtistData)
+  //     .subscribe(
+  //       Response => console.log(Response),
+  //       err => console.log(err)
+  //     )
+  // }
+  
+  getUser() {
+    this._auth.artistInfo(this.logInArtistData)
+      .subscribe(
+        Response => console.log(Response),
+        err => console.log
+      )
+  }
+  // checkValidUser() {
+  //  if this.log
+  // }
 
 
 }

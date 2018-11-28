@@ -1,5 +1,7 @@
 import { Injectable } from '@angular/core';
+// import { Observable } from "rxjs/Rx";
 import { HttpClient } from '@angular/common/http';
+// import 'rxjs/add/operator/map';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +15,9 @@ export class AuthService {
   //LOGIN URLS
   private artistLogInUrl = "http://localhost:5000/artist/login"
   private generalLogInUrl = "http://localhost:5000/donators/login"
+
+  //USER INFO URL
+  private artistInfoURL = "http://localhost:5000/artist/artistprofile/:email" 
 
   constructor(private http: HttpClient) { }
 
@@ -39,6 +44,12 @@ export class AuthService {
   //CHECKS USER LOGIN 
   loggedIn() {
     return !!localStorage.getItem('token')
+  }
+
+  //CHECKS ARTIST
+  artistInfo (user) {
+    return this.http.get<any>(this.artistInfoURL, user)
+      // .map((Response:Response) => Response.json())
   }
 
 }
