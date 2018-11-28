@@ -28,7 +28,7 @@ import { GeneralLoginComponent } from './forms/general-login/general-login.compo
 import { UserProfileComponent } from './users/user-profile/user-profile.component';
 import { UploadSongComponent } from './upload/upload-song/upload-song.component';
 import { ListFileComponent } from './upload/list-file/list-file.component';
-import { DetailsUploadComponent } from './details-upload/details-upload.component';
+import { DetailsUploadComponent } from './upload/details-upload/details-upload.component';
 
 //Routes
 const appRoutes: Routes = [
