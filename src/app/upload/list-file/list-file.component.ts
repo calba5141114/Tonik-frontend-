@@ -9,7 +9,7 @@ import { ServerService } from '../../services/server.service';
 })
 export class ListFileComponent implements OnInit {
 
-  constructor(private uploadService: ServerService) { }
+  constructor(private uploadSong: ServerService) { }
 
   ngOnInit() {
   }
@@ -21,7 +21,7 @@ export class ListFileComponent implements OnInit {
     this.showFile = enable;
 
     if(enable) {
-      this.fileUploads = this.uploadService.getFiles();
+      this.fileUploads = this.uploadSong.getFiles();
     }
   }
 

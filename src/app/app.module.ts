@@ -29,6 +29,7 @@ import { UserProfileComponent } from './users/user-profile/user-profile.componen
 import { UploadSongComponent } from './upload/upload-song/upload-song.component';
 import { ListFileComponent } from './upload/list-file/list-file.component';
 import { DetailsUploadComponent } from './upload/details-upload/details-upload.component';
+import { SongUploaderComponent } from './upload/song-uploader/song-uploader.component';
 
 //Routes
 const appRoutes: Routes = [
@@ -43,7 +44,7 @@ const appRoutes: Routes = [
   { path: 'artist-login', component: ArtistLogInComponent },
   { path: 'general-login', component: GeneralLoginComponent },
   { path: 'choose-usertype-login', component: ChooseLogInComponent },
-  { path: 'upload-song', component: UploadSongComponent }
+  { path: 'upload-song', component: SongUploaderComponent }
   
 ];
 @NgModule({
@@ -68,6 +69,7 @@ const appRoutes: Routes = [
     UploadSongComponent,
     ListFileComponent,
     DetailsUploadComponent,
+    SongUploaderComponent,
 ],
   imports: [
     BrowserModule,

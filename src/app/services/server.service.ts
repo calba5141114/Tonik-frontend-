@@ -14,7 +14,7 @@ export class ServerService {
 
     formdata.append('file', file);
 
-    const req = new HttpRequest('POST', '/post', formdata, {
+    const req = new HttpRequest('POST', 'http://localhost:6600/api/files/upload', formdata, {
       reportProgress: true,
       responseType: 'text'
     });
@@ -23,7 +23,7 @@ export class ServerService {
   }  
 
   getFiles(): Observable<any> {
-    return this.http.get('/getallfiles')
+    return this.http.get('http://localhost:6600/api/files/all')
   }
  
 
