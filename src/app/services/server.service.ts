@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Observable } from 'rxjs';
 import { HttpClient, HttpEvent, HttpRequest } from '@angular/common/http';
 
 @Injectable({
@@ -9,14 +9,26 @@ export class ServerService {
 
   constructor(private http: HttpClient) { }
 
-  //File-Upload URL
-  private fileUploadService = 'http://localhost:5000/fileupload/audio-upload'
+  pushFileToS3(file: File): Observable<HttpEvent<{}>> {
+    const formdata: FormData = new FormData();
+
+    formdata.append('file', file);
+
+    const req = new HttpRequest('POST', '/post', formdata, {
+      reportProgress: true,
+      responseType: 'text'
+    });
+
+    return this.http.request(req);
+  }  
+
+  getFiles(): Observable<any> {
+    return this.http.get('/getallfiles')
+  }
+ 
+
 
  ngOnInit() {
- }
-
- uploadFile (file) {
-   return this.http.post<any>(this.fileUploadService, file)
  }
 
 }
