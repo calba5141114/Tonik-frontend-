@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ServerService } from '../../services/server.service';
 
 @Component({
   selector: 'app-list-file',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListFileComponent implements OnInit {
 
-  constructor() { }
+  constructor(private uploadService: ServerService) { }
 
   ngOnInit() {
+  }
+
+  showFile = false;
+  fileUploads: Observable<string[]>
+
+  showFiles(enable: boolean) {
+    this.showFile = enable;
+
+    if(enable) {
+      this.fileUploads = this.uploadService.getFiles();
+    }
   }
 
 }
